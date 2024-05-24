@@ -137,7 +137,6 @@ def delete_equipment():
         return jsonify({'error': 'Equipment not found'}), 404
 
 
-# New Methods for Search
 @app.get('/reviews/search_by_text')
 def search_reviews_by_text():
     text = request.args.get('text', '')
